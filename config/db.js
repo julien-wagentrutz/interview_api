@@ -5,7 +5,7 @@ const pool = mariadb.createPool({
 	user: process.env.USER_DB,
 	password: process.env.PASSWORD_DB,
 	port: process.env.PORT_DB,
-	database: 'source_api_ffr',
+	database: process.env.DATABASE_DB,
 });
 
 pool.getConnection()
