@@ -1,0 +1,14 @@
+{
+  "name": "api-ffr",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "mariadb": "^3.0.1"
+  }
+}
