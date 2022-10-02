@@ -7,7 +7,7 @@ To install dependencies
 ```bash
 yarn 
 ```
-To start project launch on [http://localhost:3000/](http://localhost:3000/)
+To start project launch on [http://localhost:3300/](http://localhost:3300/)
 ```bash
 yarn start
 ```

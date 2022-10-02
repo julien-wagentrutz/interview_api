@@ -9,8 +9,8 @@ const pool = mariadb.createPool({
 });
 
 pool.getConnection()
-	.then(() => {console.log("Connected to Database")})
-	.catch((err) => {console.log("Failed to connect to db", err)})
+.then(() => {console.log("Connected to Database")})
+.catch((err) => {console.log("Failed to connect to db", err)})
 
 BigInt.prototype.toJSON = function() {
 	return this.toString()

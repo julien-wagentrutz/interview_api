@@ -1,6 +1,12 @@
 const pool = require('../config/db')
 
 module.exports.getAllTeams = async () => {
-	return await pool.query("SELECT * FROM teams");
-	pool.end()
+	const teams =  await pool.query("SELECT * FROM teams")
+	return teams;
+}
+
+
+module.exports.getTeamById = async (id) => {
+	const team = await pool.query("SELECT * FROM teams WHERE id = ? ", id)
+	return team;
 }

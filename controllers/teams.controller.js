@@ -44,13 +44,19 @@ module.exports.ranking = async (req, res) => {
 		for(let i = 1; i < teams.length; i++) {
 			ranking = teamsHelper.compareTwoTeamsFromStat(stats[teams[i].id], ranking, ranking.length -1);
 		}
-		res.status(200).json(ranking.reverse())
+		res.status(200).json(ranking.reverse());
 	}
 	catch (err) {
-		res.status(400).json({err})
+		res.status(400).json({err});
 	}
 }
 
-module.exports.sortByPoints = () => {
-
+module.exports.getTeam = async(req, res) => {
+	try {
+		const teams = await teamsModel.getTeamById(req.params.id);
+		res.status(200).json(teams);
+	}
+	catch (err) {
+		res.status(400).json({err});
+	}
 }
