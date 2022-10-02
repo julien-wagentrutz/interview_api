@@ -22,5 +22,6 @@ The api is developed with node.js on the [Express framework](https://expressjs.c
   To use environment variables
 - [express](https://expressjs.com/) : node js framework
 - [mariadb](https://www.npmjs.com/package/mariadb) : To establish the connection with the database
+- [cors](https://www.npmjs.com/package/cors) : To allow access of database on other origin tha localhost
 
 
