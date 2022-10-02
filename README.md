@@ -3,6 +3,11 @@
 API that gives the ranking of teams in relation to their matches
 
 ## Installation
+To install dependencies
+```bash
+yarn 
+```
+To start project launch on [http://localhost:3000/](http://localhost:3000/)
 ```bash
 yarn start
 ```
